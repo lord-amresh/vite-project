@@ -1,17 +1,20 @@
 import "./App.css";
+import Title from "./Title.jsx";
 
-function Title() {
+function Description() {
   return (
-    <h1>I am the Title.</h1>
+    <h3>I am the Description.</h3>
   )
 }
 
 function App() {
   return  (
     <div>
-      <h1>This is my Aoo Component.</h1>
-      <p>Inside App Component we have:</p>
       <Title/>
+      <Description/>
+      <Title/>
+      <Description/>
+      
     </div>
   );
 }
