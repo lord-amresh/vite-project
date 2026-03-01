@@ -9,13 +9,11 @@ function Description() {
 
 function App() {
   return  (
-    <div>
+    <>
       <Title/>
-      <Description/>
       <Title/>
-      <Description/>
-      
-    </div>
+      <Title/>
+    </>
   );
 }
 
