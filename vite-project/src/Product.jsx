@@ -1,14 +1,13 @@
 import "./Product.css";
+import Price from "./Price.jsx";
 
-function Product({title, Price, features}) {
-    let isDiscount = Price > 30000;
-    let styles = {backgroundColor: isDiscount ? "Turquoise" : ""} ;   
-    
+function Product({title, price, features}) {
+   
     return(
-        <div className="Product" style= {styles} >
-            <h3>{title}</h3>
-            <h5>Price : {Price} </h5>
-            {Price > 30000 && <p>Discount of 5%</p> }
+        <div className="Product" >
+            <p>Title</p>
+            <p>Description</p>
+            <Price />
         </div>
     );
     
