@@ -1,13 +1,16 @@
 import "./Product.css";
 import Price from "./Price.jsx";
 
-function Product({title, price, features}) {
-   
+function Product({title, idx}) {
+    let oldPrices = ["12,495", "11,900", "1,599", "599"]
+    let newPrices = ["8,999", "9,199", "899", "278"]
+    let Description = ["8000 DPI", "Intutive Surface", "Designed for IPAD Pro", "wireless"]
+
     return(
         <div className="Product" >
-            <p>Title</p>
-            <p>Description</p>
-            <Price />
+            <h4>{title}</h4>
+            <p>{Description [idx] }</p>
+            <Price oldPrice={oldPrices[idx]} newPrice={newPrices[idx]}/>
         </div>
     );
     
